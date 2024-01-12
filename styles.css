@@ -1,0 +1,240 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+    background: #444746;
+    margin: 0;
+    display: grid;
+    height: 100vh;
+}
+
+header {
+    margin: 5px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header a:link {
+    color: white;
+    text-decoration-line: none;
+    font-size: 16px;
+}
+
+header a:link:hover {
+    text-decoration-line: underline;
+}
+
+header>* {
+    margin-right: 15px;
+}
+
+.gAppsIcon-Container {
+    width: 35px;
+    display: flex;
+    padding: 7px 4px;
+}
+
+.gAppsIcon-Container:hover {
+    background-color: #555657;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.gb_i {
+    width: 30px;
+    margin: auto;
+    filter: invert();
+}
+
+.profilePict-container {
+    width: 35px;
+    display: flex;
+    align-items: center;
+    padding: 7px 4px;
+    border-radius: 50%;
+}
+
+.profilePict-container:hover {
+    background-color: #555657;
+    cursor: pointer;
+}
+
+header img {
+    border-radius: 50%;
+    margin: auto;
+}
+
+/* main section */
+
+#main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 20px;
+    color: #e8eaed;
+}
+
+#main-content img {
+    width: 320px;
+}
+
+#main-content>* {
+    margin: 15px 0px;
+
+}
+
+#main-content #input-container {
+    display: flex;
+    width: min(640px, 90%);
+    min-width: 380px;
+    height: 50px;
+    padding: 0 10px;
+    color: rgb(153, 152, 152);
+
+    border: 1px solid;
+    border-radius: 20px;
+}
+
+#main-content #input-container:hover {
+    background-color: #585a5a;
+    border-color: transparent;
+}
+
+#main-content #input-container svg {
+    width: 22px;
+    margin: 10px;
+}
+
+#main-content #input-container #search-icon {
+    filter: invert(80%);
+}
+
+#main-content #input-container .inputEnd-icon {
+    width: 26px;
+}
+
+#main-content #input-container .inputEnd-icon:hover {
+    cursor: pointer;
+}
+
+#micIcon-container:hover .tooltiptext {
+    visibility: visible;
+}
+
+#photoIcon-container:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #312f2f;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size: 12px;
+
+    position: absolute;
+    margin-left: -80px;
+    margin-top: 50px;
+
+}
+
+.tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #312f2f transparent;
+}
+
+
+#main-content #input-container input {
+    flex-grow: 1;
+    background: none;
+    border: none;
+    caret-shape: bar;
+    caret-color: white;
+    font-size: 16px;
+    color: #e8eaed;
+}
+
+#main-content #input-container input:focus {
+    outline-width: 0;
+}
+
+#main-content button {
+    background: #5f6063;
+    color: #e8eaed;
+    font-size: 16px;
+    padding: 13px 15px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#main-content button:hover {
+    border: 1px solid;
+    cursor: pointer;
+}
+
+#main-content a:link {
+    color: #8ab4f8;
+    text-decoration-line: none;
+}
+
+#main-content a:link:hover {
+    text-decoration-line: underline;
+}
+
+/* footer */
+
+footer {
+    background-color: #202124;
+    color: rgb(207, 204, 204);
+    align-self: self-end;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    column-gap: 20px;
+    padding: 3px 20px;
+}
+
+footer a:link {
+    color: rgb(207, 204, 204);
+    text-decoration: none;
+}
+
+footer a:link:hover {
+    text-decoration: underline;
+}
+
+footer .first-row {
+    padding: 5px 30px 5px 30px;
+    border-bottom: solid;
+    border-width: 0.01em;
+    border-color: rgba(255, 255, 255, 0.342);
+}
+
+footer .second-row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 690px) {
+    footer .second-row {
+        flex-direction: column;
+    }
+
+    footer ul {
+        justify-content: center;
+    }
+
+}
